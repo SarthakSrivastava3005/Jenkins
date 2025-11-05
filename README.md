@@ -25,9 +25,10 @@ Before starting, ensure you have:
 
 ## ⚙️ Steps to Install Jenkins
 
-1. SSH into the EC2 Instance
 ```bash
+1. SSH into the EC2 Instance
 ssh -i /path/to/your-key.pem ubuntu@<your-ec2-public-ip>
+
 🧩 Tip: If SSH fails, check your Security Group inbound rules.
 Port 22 must be open for your public IP (or 0.0.0.0/0 for testing only).
 
