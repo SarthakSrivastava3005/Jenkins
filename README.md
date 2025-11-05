@@ -29,7 +29,7 @@ Before starting, ensure you have:
 1. SSH into the EC2 Instance
 ssh -i /path/to/your-key.pem ubuntu@<your-ec2-public-ip>
 
-🧩 Tip: If SSH fails, check your Security Group inbound rules.
+Tip: If SSH fails, check your Security Group inbound rules.
 Port 22 must be open for your public IP (or 0.0.0.0/0 for testing only).
 
 2. Update System Packages
@@ -39,7 +39,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install openjdk-11-jdk -y
 java -version
 
-4. Add Jenkins Repository Key & Source List
+4. Add Jenkins Repository Key and Source List
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 
@@ -51,36 +51,30 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 sudo apt update
 sudo apt install jenkins -y
 
-6. Start & Enable Jenkins Service
+6. Start and Enable Jenkins Service
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
 Ensure Jenkins is active and running successfully.
-
-7. Configure Firewall
-sudo ufw allow 8080
-sudo ufw allow OpenSSH
-sudo ufw enable
-sudo ufw status
-
-8. Access Jenkins in Browser
+```
+### 7. Access Jenkins inside Browser
 Open your browser and visit:
 
 http://<your-ec2-public-ip>:8080
 
-9. Unlock Jenkins
+### 8. Unlock Jenkins
 Get the initial admin password:
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Copy the password, paste it into the browser field, and continue setup.
 
-10. Install Suggested Plugins & Create Admin User
+### 9. Install Suggested Plugins and Create Admin User
 Click “Install suggested plugins”
 Create your Jenkins admin credentials
 Configure instance URL as your EC2 public IP (port 8080)
 
 ---
 
-**🧰 Verification**
+## Verification
 After installation, verify Jenkins dashboard is accessible:
 
 ✅ Jenkins service is running
@@ -89,14 +83,14 @@ After installation, verify Jenkins dashboard is accessible:
 
 ---
 
-**🧾 References**
+## 🧾 References
 Jenkins Official Documentation
 AWS EC2 User Guide
 OpenJDK Installation
 
 ---
 
-**👨‍💻 Author**
+## 👨‍💻 Author
 Sarthak Srivastava
 Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 📧 srivastava.sarthak.2000@gmail.com
@@ -104,7 +98,7 @@ Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 
 ---
 
-**🏁 Next Steps**
+## 🏁 Next Steps
 Integrate Jenkins with GitHub for source code automation
 Configure build pipelines using Maven/Gradle
 Deploy builds to AWS S3 / EC2 / EKS for CI/CD
