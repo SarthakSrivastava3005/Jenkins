@@ -98,7 +98,7 @@ Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 
 ---
 
-## 🏁 Next Steps
+## Next Steps
 Integrate Jenkins with GitHub for source code automation
 Configure build pipelines using Maven/Gradle
 Deploy builds to AWS S3 / EC2 / EKS for CI/CD
