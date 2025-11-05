@@ -78,12 +78,13 @@ echo "Running sample script if exists..."
 bash build.sh || echo "No build.sh found!"
 echo "Build finished successfully!"
 echo "=============================="
+```
 Save the job.
 
 📸 Screenshot Placeholder: jenkins_build_step.png
 
 
-🔔 Step 5: Set Up GitHub Webhook
+### 🔔 Step 5: Set Up GitHub Webhook
 Go to your GitHub repo → Settings → Webhooks → Add webhook
 
 In the Payload URL, enter:
@@ -95,7 +96,7 @@ Click Add Webhook
 
 📸 Screenshot Placeholder: github_webhook.png
 
-🧪 Step 6: Verify Integration
+### 🧪 Step 6: Verify Integration
 Push a small change to your repo (e.g., edit README.md).
 Check Jenkins:
 The job should trigger automatically.
@@ -115,12 +116,13 @@ Checking out Revision <commit-id> (refs/remotes/origin/main)
 Hello from Jenkins build job!
 + echo Build finished successfully!
 Finished: SUCCESS
-🧾 References
+
+## 🧾 References
 Jenkins Documentation
 GitHub Webhooks Guide
 AWS EC2 User Guide
 
-👨‍💻 Author
+## 👨‍💻 Author
 Sarthak Srivastava
 Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 📧 srivastava.sarthak.2000@gmail.com
