@@ -25,21 +25,20 @@ Before starting, ensure you have:
 
 ## ⚙️ Steps to Install Jenkins
 
-### 1. SSH into EC2 Instance
-
+1. SSH into the EC2 Instance
 ```bash
 ssh -i /path/to/your-key.pem ubuntu@<your-ec2-public-ip>
 🧩 Tip: If SSH fails, check your Security Group inbound rules.
 Port 22 must be open for your public IP (or 0.0.0.0/0 for testing only).
 
-**### 2. Update System Packages**
+2. Update System Packages
 sudo apt update && sudo apt upgrade -y
 
-**### 3. Install Java (Jenkins Dependency)**
+3. Install Java (Jenkins Dependency)
 sudo apt install openjdk-11-jdk -y
 java -version
 
-**### 4. Add Jenkins Repository Key & Source List**
+4. Add Jenkins Repository Key & Source List
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 
@@ -47,33 +46,33 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
   https://pkg.jenkins.io/debian-stable binary/" | \
   sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
-**### 5. Install Jenkins**
+5. Install Jenkins
 sudo apt update
 sudo apt install jenkins -y
 
-**### 6. Start & Enable Jenkins Service**
+6. Start & Enable Jenkins Service
 sudo systemctl start jenkins
 sudo systemctl enable jenkins
 sudo systemctl status jenkins
 Ensure Jenkins is active and running successfully.
 
-**### 7. Configure Firewall**
+7. Configure Firewall
 sudo ufw allow 8080
 sudo ufw allow OpenSSH
 sudo ufw enable
 sudo ufw status
 
-**### 8. Access Jenkins in Browser**
+8. Access Jenkins in Browser
 Open your browser and visit:
 
 http://<your-ec2-public-ip>:8080
 
-**### 9. Unlock Jenkins**
+9. Unlock Jenkins
 Get the initial admin password:
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Copy the password, paste it into the browser field, and continue setup.
 
-**### 10. Install Suggested Plugins & Create Admin User**
+10. Install Suggested Plugins & Create Admin User
 Click “Install suggested plugins”
 Create your Jenkins admin credentials
 Configure instance URL as your EC2 public IP (port 8080)
