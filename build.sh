@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "Hello from Jenkins build job!"
+echo "Hello from Jenkins build job with WebHook configured!"
 date
