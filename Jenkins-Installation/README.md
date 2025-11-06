@@ -7,7 +7,7 @@ It demonstrates key steps of a typical **DevOps CI/CD environment setup** using 
 
 ## 🧠 Project Overview
 
-The goal of this task is to deploy and configure **Jenkins** — an essential CI/CD tool — on a cloud-based virtual machine (AWS EC2).  
+The goal of this task is to deploy and configure **Jenkins**, an essential CI/CD tool on a cloud-based virtual machine (AWS EC2).  
 This setup allows developers to automate build, test, and deployment pipelines.
 
 ---
