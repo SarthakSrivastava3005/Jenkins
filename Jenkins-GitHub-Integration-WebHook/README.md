@@ -1,4 +1,4 @@
-# 🔗 Jenkins–GitHub CI Integration (Freestyle Job with Webhook)
+# 🔗 Jenkins-GitHub CI Integration (Freestyle Job with Webhook)
 
 This repository documents the setup of a **Continuous Integration (CI) pipeline** using **Jenkins** and **GitHub**.  
 It demonstrates how Jenkins automatically triggers a build whenever new code is pushed to this GitHub repository via a **webhook**.
@@ -11,7 +11,7 @@ This setup connects:
 - **GitHub (Source Control)** → Hosts the code repository.
 - **Jenkins (CI Tool)** → Fetches code, runs automated builds/tests, and provides real-time build feedback.
 
-By the end, each push to GitHub will trigger Jenkins automatically — achieving **Continuous Integration**.
+By the end, each push to GitHub will trigger Jenkins automatically, achieving **Continuous Integration**.
 
 ---
 
