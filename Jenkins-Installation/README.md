@@ -85,7 +85,9 @@ After installation, verify Jenkins dashboard is accessible:
 
 ## 🧾 References
 Jenkins Official Documentation
+
 AWS EC2 User Guide
+
 OpenJDK Installation
 
 ---
@@ -100,8 +102,11 @@ Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 
 ## Next Steps
 Integrate Jenkins with GitHub for source code automation
+
 Configure build pipelines using Maven/Gradle
+
 Deploy builds to AWS S3 / EC2 / EKS for CI/CD
+
 Automate with Infrastructure as Code (IaC) using Terraform or CloudFormation
 
 ---
