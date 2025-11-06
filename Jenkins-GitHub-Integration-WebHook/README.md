@@ -130,4 +130,4 @@ Java Backend & Cloud Enthusiast | Exploring DevOps & AWS Cloud
 📧 srivastava.sarthak.2000@gmail.com
 🔗 LinkedIn
 
-⭐ If this helped you set up Jenkins–GitHub CI, give it a star on GitHub!
+⭐ If this helped you set up Jenkins–GitHub CI, please give it a star on GitHub!
